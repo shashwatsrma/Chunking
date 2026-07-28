@@ -32,7 +32,7 @@ from pathlib import Path
 # ---------------------------------------------------------------------
 # CONFIG — edit these if your filenames/paths differ
 # ---------------------------------------------------------------------
-INPUT_FILES = ["AAGYA.txt", "ANISH.txt", "ISHA.txt"]
+INPUT_FILES = ["ANISH.txt"]
 # For txt files, just list them instead, e.g.:
 # INPUT_FILES = ["AAGYA.txt", "ANISH.txt", "ISHA.txt"]
 
