@@ -257,7 +257,12 @@ def bundle_chunks(rows, source_file):
         elif kind in ("leaf_item", "leaf_item_paren", "prose"):
             if current is None:
                 continue
-            prefix = f"{num}. " if kind == "leaf_item" else ""
+            if kind == "leaf_item":
+                prefix = f"{num}. "
+            elif kind == "leaf_item_paren":
+                prefix = f"({num}) "
+            else:
+                prefix = ""
             current["content"] += prefix + text + " "
 
     flush()
